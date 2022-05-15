@@ -1,5 +1,8 @@
 # HawkHacks
 
+# Presentation: https://www.youtube.com/watch?v=j5sArdyO1g4&feature=youtu.be
+
+
 # How to use
 Download ffmpeg dependencies. If you are using Mac, run `brew install ffmpeg` on terminal. If you are using Windows, follow [this](https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/) tutorial.
 
