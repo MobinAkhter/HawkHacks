@@ -32,7 +32,8 @@ def transcribe():
     if request.method == "GET":
         # message = {'trancript_id:' f'{transcript_id}'}
         # return jsonify(message)
-        check_transcript_status(polling_endpoint)
+        api_data = check_transcript_status(polling_endpoint)
+        return api_data
 
 ### Run App
 if __name__=='__main__':

@@ -78,7 +78,8 @@ def transcribe_from_link(link, categories):
 
 
 def check_transcript_status(polling_point):
-    response = request.get(polling_point, headers=headers)
-    print(response.json())
+    response = requests.get(polling_point, headers=headers)
+    print(response.json()['text'])
+    return response.json()
 
 # transcribe_from_link("https://www.youtube.com/watch?v=pAgnJDJN4VA", False)

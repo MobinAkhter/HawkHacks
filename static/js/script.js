@@ -24,7 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(data => {
       console.log('GET response:');
-      console.log(text.transcript_id); 
+      console.log(data); 
+      console.log(data.text)
+      if (data.audio_duration != null){
+        clearInterval(intervalId)
+        document.getElementById('transcript_text').innerHTML = data.text;
+      }
     });
 
   }, refreshInterval);
