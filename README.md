@@ -19,3 +19,5 @@ The web application our team built for the HawHacks hackathon is essentially a w
 
 # 🤔 Why use YText?
 YText will help you save notes from long YouTube tutorials on your machine instead of having to pause and write them on a piece of paper.
+
+# Features
