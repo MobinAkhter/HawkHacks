@@ -6,8 +6,10 @@
 # from bs4 import BeautifulSoup
 # import requests
 from distutils.log import debug
+from email import message
 from flask import Flask, render_template, request, jsonify
-from transcribe import transcribe_from_link
+from transcribe import transcribe_from_link, check_transcript_status
+
 
 # Flask constructor
 app = Flask(__name__)
@@ -22,9 +24,15 @@ def transcribe():
         print("here1")
         url = request.form['videoURL']
         print("here2")
+        global polling_endpoint
         polling_endpoint = transcribe_from_link(url,False)
-        return render_template('success.html')
-    return render_template('text.html')
+        return render_template('video.html')
+    # return render_template('index.html')
+
+    if request.method == "GET":
+        # message = {'trancript_id:' f'{transcript_id}'}
+        # return jsonify(message)
+        check_transcript_status(polling_endpoint)
 
 ### Run App
 if __name__=='__main__':

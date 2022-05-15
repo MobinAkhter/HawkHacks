@@ -29,6 +29,9 @@ headers = {
 }
 CHUNK_SIZE = 5242880
 
+
+polling_endpoint = ""
+
  
 
 def transcribe_from_link(link, categories):
@@ -72,5 +75,10 @@ def transcribe_from_link(link, categories):
     print(f"Transcribing at {polling_endpoint}")
 
     return polling_endpoint
+
+
+def check_transcript_status(polling_point):
+    response = request.get(polling_point, headers=headers)
+    print(response.json())
 
 # transcribe_from_link("https://www.youtube.com/watch?v=pAgnJDJN4VA", False)
