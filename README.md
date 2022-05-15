@@ -29,5 +29,13 @@ Converts any youtube video to transcribed text in order to help people take note
 
 AssemblyAI used for speech to text conversion. 🌟
 
-# Try it out
+# 💘 Try it out
 https://ytext.tech
+
+# 🆘 Where to get help
+Feel free to reach out to our team members. We will be happy to help you.
+
+# Awesome Team members:
+* Mobin Akhter
+* Suleyman Eminov
+* 
