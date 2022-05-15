@@ -21,13 +21,10 @@ The web application our team built for the HawHacks hackathon is essentially a w
 YText will help you save notes from long YouTube tutorials on your machine instead of having to pause and write them on a piece of paper.
 
 # 😍 Features
-Homepage with access to FAQ page, About Us page, and a place to enter your YouTube URL 💫
-
-Intuitive interactions with the Navigation bar 🌠
-
-Converts any youtube video to transcribed text in order to help people take notes and get information efficiently ⭐
-
-AssemblyAI used for speech to text conversion. 🌟
+* Homepage with access to FAQ page, About Us page, and a place to enter your YouTube URL 💫
+* Intuitive interactions with the Navigation bar 🌠
+* Converts any youtube video to transcribed text in order to help people take notes and get information efficiently ⭐
+* AssemblyAI used for speech to text conversion. 🌟
 
 # 💘 Try it out
 https://ytext.tech
