@@ -14,3 +14,5 @@ run
 ```
 pip3 install -r requirements.txt
 ```
+## 👀 What is YText
+The web application our team built for the HawHacks hackathon is essentially a website where users can plug in a url from YouTube and then convert it into transcripts to simplify their note taking.
