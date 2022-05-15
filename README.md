@@ -1,6 +1,6 @@
 # HawkHacks
 
-## How to use
+# How to use
 1. Download ffmpeg dependencies. If you are using Mac, run `brew install ffmpeg` on terminal. If you are using Windows, follow [this](https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/) tutorial.
 
 2. Install the requirements
@@ -14,5 +14,7 @@ run
 ```
 pip3 install -r requirements.txt
 ```
-## 👀 What is YText
+# 👀 What is YText
 The web application our team built for the HawHacks hackathon is essentially a website where users can plug in a url from YouTube and then convert it into transcripts to simplify their note taking.
+
+
