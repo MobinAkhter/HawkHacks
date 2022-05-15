@@ -7,18 +7,25 @@
 # import requests
 from distutils.log import debug
 from flask import Flask, render_template, request, jsonify
+from transcribe import transcribe_from_link
 
+# Flask constructor
 app = Flask(__name__)
 
-auth_key = 'a30b0d235ea04ce5946b07f391afd504'
-
 @app.route('/', methods = ['POST', 'GET'])
-def get_transcript():
+def home_page():
     return render_template('index.html')
     
-@app.route('/text', methods = ['GET', 'POST'])
-def get_text():
+@app.route('/transcribe', methods = ['GET', 'POST'])
+def transcribe():
+    if request.method == "POST":
+        print("here1")
+        url = request.form['videoURL']
+        print("here2")
+        polling_endpoint = transcribe_from_link(url,False)
+        return render_template('success.html')
     return render_template('text.html')
 
 ### Run App
-app.run(debug=True)
+if __name__=='__main__':
+   app.run(debug=True)

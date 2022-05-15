@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="top-container">
-        <form action="convert-text" method="POST" id="form">
+        <form action="{{url_for('transcribe')}}" method="POST" id="form">
         <h1><i class="fab fa-youtube"></i>YouTube to text converter</h1>
         <h4>Please insert the YouTube video URL</h4>
         <div>
-            <input type="text" name="videoURL" placeholder="Enter video URL"><button id="convert-btn">Convert</button> 
+            <input type="text" name="videoURL" placeholder="Enter video URL">
+            <button type="submit" id="convert-btn">Convert</button> 
         </div>
         </form> 
     </div>
