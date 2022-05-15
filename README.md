@@ -35,4 +35,5 @@ Feel free to reach out to our team members. We will be happy to help you.
 # Awesome Team members:
 * Mobin Akhter
 * Suleyman Eminov
-* 
+* Sushrut Dhakal
+* Yue Yan
